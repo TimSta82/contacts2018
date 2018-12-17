@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="Loading...please wait..."
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/login_form"
+        android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/tv_char"
+           android:textSize="48sp"
+           android:text="A"
+           android:textStyle="bold"
+           android:layout_gravity="center_horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:textSize="24sp"
+            android:text="Hans"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_call"
+                android:src="@drawable/ic_call"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/iv_email"
+                android:src="@drawable/ic_email"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:clickable="true"
+                android:src="@drawable/ic_edit"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:src="@drawable/ic_delete"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="please enter name"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="please enter email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:ems="10"
+            android:hint="please enter phone number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:background="@drawable/buttons"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Contacts2018</string>
+    <string name="registering">"Busy registering user...please wait..."</string>
+    <string name="login">Busy logging you in...please wait...</string>
+    <string name="reset_password">Busy sending reset instructions...please wait...</string>
+    <string name="logged_user">Checking login credentials...please wait...</string>
+    <string name="login_successful">Logging you in...please wait...</string>
+    <string name="get_contacts">Getting all contacts...please wait...</string>
+    <string name="create_new_contact">Busy creating new contact...please wait...</string>
+</resources>
